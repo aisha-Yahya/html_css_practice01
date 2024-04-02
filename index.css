@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    box-sizing: border-box;/*هذي وظيفتها تجعل الصور بجانب بعض حتى لو عملنا مسافات بين الصور وكذا تخلي الصور جنب بعض والمساحه ماتتأثر والصوره الاخيره ماتنزل لتحت يعني هذا اكون استخدمه في كل تصميم */
+    /*first-Gallery-column هذي الصور الي عملنا لهن */
+}
+.clearfix:after{
+    content: "";
+    display: table;/* هنا عملنا كذا لان العرض حق الصور بيكون مثل الجدول عمود بجانب عمود*/
+    clear: both;/*الصور الي تحت عملنا لهن float  ومن اجل ال float مايأثر على العناصر الي بعد نعمل clear*/
+}
+body{
+    color: #373a3c;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+}
+/*=====SIDEBAR STYLING START=====*/
+.sidebar{
+    background-color: #006599;
+    height: 100vh;
+    width: 30%;
+    float: left;
+    color: white;
+    text-align: center;
+    position: fixed;
+}
+.sidebar-header{
+    margin: 35px 0;
+}
+.sidebar-header h1{
+    font-weight: 400;
+    font-size: 38px;
+    text-transform: capitalize;
+    margin-top: 7px;
+}
+.sidebar-body-list{
+    list-style-type: none;
+}
+.sidebar-body-list li{
+    margin: 35px;
+}
+.sidebar-body-list li a{
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-weight: 300px;
+    text-transform: capitalize;
+}
+.sidebar-body-list li a:hover{
+    color: #f4ef5e;
+}
+/*=====SIDEBAR STYLING END=====*/
+
+
+
+/*=====Contant-Header STYLING START=====*/
+.content{
+    margin-left: 30%;
+}
+.content .contant-header > img {
+    width: 100%;
+}
+/*=====Contant-Header STYLING EndT=====*/
+
+
+
+/*=====Content-Welcom STYLING START=====*/
+.Content-Welcom{
+    margin:50px 50px 80px;
+}
+.Content-Welcom h2{
+    font-weight: 400;
+    color: #006599;
+    font-size: 3rem;
+    margin-bottom: 40px;
+}
+.Content-Welcom p{
+    line-height: 2;
+    font-weight: 300;
+    font-size: 20px;
+}/*=====Content-Welcom STYLING End=====*/
+
+
+
+ /*!--Content-about STYLING START--*/
+ .Content-about{
+    margin: 50px 50px 80px;
+ }
+ .Content-about-image{
+    float: left;
+    margin-right: 50px;
+    width: 250px;
+ }
+ .Content-about-image > img{
+    width: 100%;
+ }
+ .Content-about-info h3{
+    font-weight: 400;
+    color: #006599;
+    font-size: 3rem;
+    margin-bottom: 40px;
+ }
+  .Content-about-info p{
+    line-height: 2;
+    font-weight: 300;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .Content-about-info a{
+    margin-left: 300px;
+    text-decoration: none;
+    background-color: #006599;
+    color: #fff;
+    padding: 20px 60px;
+    font-size: 20px;
+    font-weight: 300;
+    display: inline-block;
+  }
+   .Content-about-info a:hover{
+background-color: #2790c6;
+   }
+ 
+  /*!--Content-about STYLING End--*/
+
+
+
+ /* !--Content-first_Gallery STYLING START--*/
+ .first-Gallery{
+    margin: 50px 50px 80px;
+ }
+ .first-Gallery h3{
+    font-weight: 400;
+    color: #006599;
+    font-size: 3rem;
+    margin-bottom: 40px;
+ }
+ .first-Gallery .first-Gallery-column{
+    float: left;
+    width: 20%;
+    padding: 8px;
+    
+ }
+ .first-Gallery .first-Gallery-column img{
+    width: 100%;
+   
+ }
+/* !--Content-first_Gallery STYLING END--*/
+
+
+/* !--Content-Second_Gallery STYLING START--*/
+.Second-Gallery {
+     margin: 50px 50px 80px;
+ }
+
+ .Second-Gallery h3 {
+     font-weight: 400;
+     color: #006599;
+     font-size: 3rem;
+     margin-bottom: 40px;
+ }
+
+ .Second-Gallery .Second-Gallery-column {
+     float: left;
+     width: 33.33%;
+     padding: 8px;
+
+ }
+
+ .Second-Gallery .Second-Gallery-column img {
+     width: 100%;
+
+ }
+
+/* !--Content-Second_Gallery STYLING END --*/
+
+
+/* !--Content-third_Gallery STYLING START--*/
+.third-Gallery {
+    margin: 50px 50px 80px;
+    
+}
+
+.third-Gallery h3 {
+    font-weight: 400;
+    color: #006599;
+    font-size: 3rem;
+    margin-bottom: 40px;
+}
+
+.third-Gallery .third-Gallery-column {
+    float: left;
+    width: 25%;
+    padding: 8px;
+}
+
+.third-Gallery .third-Gallery-column img {
+    width: 100%;
+}
+
+/* !--Content-third_Gallery STYLING END --*/
+
+
+/* !--Content Contact STYLING Start --*/
+.content-contact{
+    margin: 50px 50px 80px;
+    
+    
+}
+.content-contact h3{
+    font-weight: 400;
+    color: #006599;
+    font-size: 3rem;
+    margin-bottom: 40px;
+}
+.contact-form{
+    float: left;
+    width: 50%;
+}
+.contact-form .form-group{
+    margin-bottom: 12px;
+}
+.contact-form input{
+    height: 45px;
+}
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #0a6697;
+    outline: 0;
+    font-size: 24px;
+    font-weight: 300px;
+    color: #55595c;
+    
+}
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #4286ab;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+    border-color: #66afe9;
+}
+.form-group button{
+    color: white;
+    background: #006599;
+    border: 0;
+    padding: 18px 35px;
+    font-size: 24px;
+}
+.form-group button:hover{
+    background: #2790c6;
+    cursor: pointer;
+}
+/* !--Content Contact STYLING End --*/
+
+
+/* !--Content footer STYLING Start--*/
+
+
+.contant-info p{
+    margin-bottom: 16px;
+}
+.contant-info p,
+.contant-info address{
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 2;
+}
+/* !--Content footer STYLING End --*/
+.footer{
+        margin: 50px 50px 40px;
+}
+.footer p{
+    font-weight: 300;
+    font-size: 20px;
+}
+.footer p a{
+    text-decoration: none;
+    color: #0275d8;
+}
+
+.footer p a :hover{
+    color: #014c8c;
+}
